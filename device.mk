@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2024 The LineageOS Project
+# Copyright (C) 2020-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -156,8 +156,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    gralloc.sm6150 \
-    hwcomposer.sm6150
+    hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor

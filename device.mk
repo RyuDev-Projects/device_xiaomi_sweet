@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2025 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -156,7 +156,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    hwcomposer.qcom
+    hwcomposer.sweet
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor
@@ -169,8 +169,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml
 
 TARGET_EXCLUDES_AUDIOFX := true
-PRODUCT_PACKAGES += \
-    hwcomposer.qcom
 
 # DRM
 PRODUCT_PACKAGES += \

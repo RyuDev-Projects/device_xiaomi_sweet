@@ -75,8 +75,15 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     sku_sweet_audio_symlink
 
+ifeq ($(TARGET_USES_DOLBY),true)
+ PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_effects_dolby.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+else
+ PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+ endif
+
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
@@ -145,6 +152,9 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 USE_DEX2OAT_DEBUG := false
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiDolby
 
 # Display
 PRODUCT_PACKAGES += \
@@ -169,6 +179,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml
 
 TARGET_EXCLUDES_AUDIOFX := true
+
+# Dolby
+TARGET_USES_DOLBY := true
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -337,6 +350,11 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
+# Media
+ PRODUCT_PACKAGES += \
+    libavservices_minijail_vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor
 
 # NFC
 PRODUCT_PACKAGES += \

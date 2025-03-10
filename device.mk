@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    hwcomposer.sweet
+    hwcomposer.sweet \
+    gralloc.qcom
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor

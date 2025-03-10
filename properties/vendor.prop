@@ -188,10 +188,6 @@ vendor.display.enable_force_split=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.sf.treat_170m_as_sRGB=1
-ro.surface_flinger.set_idle_timer_ms=4000
-ro.surface_flinger.set_touch_timer_ms=4000
-ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.config.avoid_gfx_accel=true
 debug.sf.frame_rate_multiple_threshold=120
 
@@ -204,12 +200,12 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Fling
-ro.min.fling_velocity=160 
+ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
-ro.max.fling_velocity=20000 
-ro.vendor.qti.cgroup_follow.enable=true 
-persist.vendor.qti.inputopts.enable=true 
-persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1

@@ -285,6 +285,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPASweetFrameworksOverlay \
     SweetFrameworksOverlay \
     SweetSettingsOverlay \
     SweetSettingsProviderOverlay \

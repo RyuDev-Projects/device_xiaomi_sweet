@@ -178,10 +178,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
@@ -282,16 +278,23 @@ PRODUCT_PACKAGES += \
     SweetinproWifiOverlay
 
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/xiaomi
 
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
+
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
 
 # Properties
 include $(LOCAL_PATH)/properties.mk

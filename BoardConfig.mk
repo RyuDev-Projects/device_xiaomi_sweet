@@ -81,7 +81,6 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 # Manifest
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/manifests/device_framework_matrix.xml \
-    $(DEVICE_PATH)/manifests/lineage_device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/manifests/manifest.xml \
     hardware/qcom/media/conf_files/sm6150/c2_manifest.xml

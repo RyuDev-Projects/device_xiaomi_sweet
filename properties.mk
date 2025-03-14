@@ -290,6 +290,10 @@ ro.netflix.bsp_rev=Q6150-17263-1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.data.iwlan.enable=true
 
+# ParanoidDoze
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.extension_library=libqti-perfd-client.so

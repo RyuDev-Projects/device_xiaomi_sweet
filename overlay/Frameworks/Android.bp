@@ -1,5 +1,4 @@
 runtime_resource_overlay {
     name: "FrameworksResSweet",
-    sdk_version: "current",
     vendor: true
 }

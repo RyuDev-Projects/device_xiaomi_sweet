@@ -91,7 +91,6 @@ ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifests/manifest_nfc.xml
 TARGET_DISABLED_UBWC := true
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     odm \

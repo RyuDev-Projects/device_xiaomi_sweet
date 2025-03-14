@@ -294,10 +294,6 @@ persist.vendor.data.iwlan.enable=true
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.sensor.pickup=xiaomi.sensor.pickup
 
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Radio/RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.radio.multisim.config=dsds \

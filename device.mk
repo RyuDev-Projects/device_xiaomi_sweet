@@ -284,17 +284,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ParanoidDoze
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service
 
 # Properties
 include $(LOCAL_PATH)/properties.mk
@@ -308,6 +300,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

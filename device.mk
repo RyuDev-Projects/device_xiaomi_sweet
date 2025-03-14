@@ -300,6 +300,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
+# Platform
+MSMSTEPPE := sm6150
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
 # Properties
 include $(LOCAL_PATH)/properties.mk
 

@@ -285,15 +285,13 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigResSweet \
-    FrameworksResSweet \
-    SettingsResSweet \
-    SystemUIResSweet \
-    TelephonyResSweet \
-    WifiResSweet
-
-PRODUCT_PACKAGES += \
-    NotchBarKiller
+    SweetFrameworksOverlay \
+    SweetSettingsOverlay \
+    SweetSettingsProviderOverlay \
+    SweetSystemUIOverlay \
+    SweetWifiOverlay \
+    SweetinproSettingsProvider \
+    SweetinproWifiOverlay
 
 # Power
 PRODUCT_PACKAGES += \

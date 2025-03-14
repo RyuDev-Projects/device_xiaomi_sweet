@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "CarrierConfigResSweet",
-    system_ext_specific: true,
-    aaptflags: ["--keep-raw-values"]
-}

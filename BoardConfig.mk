@@ -91,7 +91,7 @@ ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifests/manifest_nfc.xml
 TARGET_DISABLED_UBWC := true
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 
 # Partitions
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions

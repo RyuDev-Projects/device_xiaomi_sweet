@@ -191,7 +191,6 @@ ro.vendor.display.sensortype=2
 
 # Display (color mode)
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.sf.color_saturation=1.0 \
 persist.sys.sf.native_mode=1 \
 persist.sys.sf.color_mode=9
 
@@ -218,25 +217,11 @@ debug.sf.disable_client_composition_cache=1 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.enable_transaction_tracing=false \
 debug.sf.latch_unsignaled=1 \
-debug.sf.predict_hwc_composition_strategy=0 \
 debug.sf.treat_170m_as_sRGB=1 \
 persist.sys.sf.color_saturation=1.0 \
-vendor.display.comp_mask=0 \
-vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0 \
-vendor.display.disable_decimation=1 \
-vendor.display.disable_excl_rect=0 \
-vendor.display.disable_excl_rect_partial_fb=1 \
-vendor.display.disable_hw_recovery_dump=1 \
-vendor.display.disable_inline_rotator=1 \
 vendor.display.disable_metadata_dynamic_fps=1 \
-vendor.display.disable_scaler=0 \
-vendor.display.disable_ui_3d_tonemap=1 \
-vendor.display.enable_default_color_mode=1 \
 vendor.display.enable_force_split=1 \
-vendor.display.enable_null_display=0 \
-vendor.display.enable_optimize_refresh=1 \
-vendor.display.qdcm.mode_combine=1 \
-vendor.gralloc.disable_ubwc=0
+vendor.display.qdcm.mode_combine=1
 
 PRODUCT_SYSTEM_PROPERTIES += \
 debug.hwui.skia_atrace_enabled=false

@@ -278,21 +278,15 @@ ro.sensor.pickup=xiaomi.sensor.pickup
 
 # Radio/RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.radio.multisim.config=dsds \
 persist.sys.fflag.override.settings_provider_model=false \
-persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.data_con_rprt=1 \
 persist.vendor.radio.data_ltd_sys_ind=1 \
 persist.vendor.radio.dynamic_sar=1 \
 persist.vendor.radio.enable_temp_dds=true \
-persist.vendor.radio.enableadvancedscan=true \
 persist.vendor.radio.force_ltd_sys_ind=1 \
 persist.vendor.radio.force_on_dc=true \
 persist.vendor.radio.manual_nw_rej_ct=1 \
-persist.vendor.radio.procedure_bytes=SKIP \
 persist.vendor.radio.rat_on=combine \
-persist.vendor.radio.sib16_support=1 \
 ro.telephony.default_cdma_sub=0
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \

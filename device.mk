@@ -259,7 +259,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     perf \
-    telephony
+    telephony \
+    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -342,14 +343,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libavservices_minijail_32 \
     libdisplayconfig.qti \
-    libnl \
-    libqdMetaData \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+    libqdMetaData
 
 # whitelisted app
 PRODUCT_COPY_FILES += \

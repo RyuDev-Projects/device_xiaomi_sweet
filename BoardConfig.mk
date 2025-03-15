@@ -84,6 +84,7 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/manifests/manifest.xml \
     hardware/qcom/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest/manifest-qva.xml
 ODM_MANIFEST_SKUS := nfc
 ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifests/manifest_nfc.xml
 

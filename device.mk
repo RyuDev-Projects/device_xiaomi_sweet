@@ -261,6 +261,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     perf \
     telephony \
+    vibrator \
     wfd
 
 # Ramdisk
@@ -315,10 +316,6 @@ PRODUCT_COPY_FILES += \
 # vndservicemanager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.sweet
 
 # WiFi
 PRODUCT_PACKAGES += \

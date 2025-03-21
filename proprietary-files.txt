@@ -527,23 +527,13 @@ vendor/lib64/hw/hwcomposer.sm6150.so
 vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplaydebug.so
-vendor/lib64/libdisplayqos.so
 vendor/lib64/libdpps.so
 vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/libqdutils.so
-vendor/lib64/libqseed3.so
 vendor/lib64/libqservice.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
-vendor/lib64/libtinyxml2_1.so
 
 # Display Feature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -624,15 +614,8 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS - from hanoip S2RIS32.32-20-7-7
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti|e9dc424a2d5c28f7f725444f013605e488b7f73b
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
-vendor/etc/seccomp_policy/gnss@2.0-base.policy|abafcf09068ec6fa62f8fc11ce6a7f51fe4cfb81
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy|45b44cf547358961841aeba728851e32dc0a5230
-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|81eed711640c1e68b6e95032fc98c7a41c727388
 vendor/lib64/libbatching.so|da85149f1a0c672a14d6cae4ade1b25ca210104a
 vendor/lib64/libgeofencing.so|59b7b5b0b51533e54aabd4426238dda0a635e741
-vendor/lib64/libgnss.so|cfbb4769a0f3189325a86a083c6436e6fba8d591
 vendor/lib64/libgps.utils.so|f2e251768bb07d2994652ba3cc16dc206415dbf2
 vendor/lib64/libloc_core.so|5acbfc5c20dfa7e7d15d853fe1d62982886ec271
 vendor/lib64/liblocation_api.so|b0cb30c072fdb7b598d7e498bda69bf771e37574

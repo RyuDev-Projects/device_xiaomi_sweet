@@ -186,9 +186,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
-# Platform
-TARGET_BOARD_PLATFORM := sm6150
-
 # Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/configs/power/power-mode.cpp
 
@@ -196,9 +193,6 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/configs/power/power-mode.cpp
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
-# QCOM
-BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
@@ -218,7 +212,6 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true

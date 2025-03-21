@@ -163,7 +163,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
-    
+
 # Define board
 PRODUCT_BOARD_PLATFORM := sm6150
 PRODUCT_USES_QCOM_HARDWARE := true
@@ -211,7 +211,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
-    
+
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -226,7 +226,7 @@ PRODUCT_COPY_FILES += \
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.sweet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sweet.rc
-    
+
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -247,7 +247,7 @@ PRODUCT_PACKAGES += \
     libbatching \
     libgeofencing \
     libgnss \
-    libsensorndkbridge 
+    libsensorndkbridge
 
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
@@ -344,7 +344,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-    
+
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -410,6 +410,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
@@ -436,7 +439,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
-    
+
 PRODUCT_PACKAGES += \
     fastbootd
 
@@ -535,7 +538,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml
-    
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
